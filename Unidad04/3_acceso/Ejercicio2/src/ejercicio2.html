@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Contacto</title>
+</head>
+
+<body>
+    <form action="mostrar_contacto.php" method="post">
+        <label for="nombre">Nombre:
+            <input type="text" name="contacto[nombre]" id="nombre" />
+        </label>
+        <br><br>
+        <label for="apellidos">Apellidos:
+            <input type="text" name="contacto[apellidos]" id="nombre" />
+        </label>
+        <br><br>
+        <label for="email">Email:
+            <input type="email" name="contacto[email]" id="nombre" />
+        </label>
+        <br><br>
+        <label for="idiomas">Idiomas:
+            <select name="idiomas">
+                <option value="Espanol">Español</option>
+                <option value="Ingles">Inglés</option>
+                <option value="Frances">Francés</option>
+                <option value="Aleman">Alemán</option>
+            </select>
+        </label>
+        <br><br>
+        <input type="submit" name="accion" value="Previsualizar">
+        <input type="submit" name="accion" value="Enviar">
+    </form>
+</body>
+
+</html>

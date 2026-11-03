@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1: vista</title>
+</head>
+
+<body>
+    <form action="ejercicio1.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" min="1" required>
+        <br>
+
+        <label for="turno">Turno:
+            <input type="radio" name="turno" id="manana" value="mañana"> Mañana
+            <input type="radio" name="turno" id="tarde" value="tarde"> Tarde
+        </label>
+        <br>
+
+        <label for="opciones">Opciones:
+            <select name="curso">
+                <option value="1smr" selected>1º SMR</option>
+                <option value="2smr">2º SMR</option>
+                <option value="1daw">1º DAW</option>
+                <option value="2daw">2º DAW</option>
+            </select>
+        </label>
+        <br>
+
+        <label for="intereses">Intereses:
+            <input type="checkbox" name="intereses[]" value="programacion"> Programación
+            <input type="checkbox" name="intereses[]" value="redes"> Redes
+            <input type="checkbox" name="intereses[]" value="sistemas"> Sistemas
+            <input type="checkbox" name="intereses[]" value="diseno"> Diseño
+        </label>
+        <br>
+        <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
